@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-background-color: #db3838;
+  --primary-color: #444444;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+.top {
+  border: 1px solid gray;
+}
+
+.top .col-md-4 a {
+  color: #444444;
+  text-decoration: none;
+}
+
+.input-group-text {
+  background-color: #db3838;
+}
+
+.fa-brands {
+  border: 2px solid var(--primary-color);
+}
+
+.carousel-caption {
+  top: 150px;
+
+}
+
+.firstrowimg{
+    overflow: hidden;
+}
+/* Ensure all links have no underline by default */
+.nav-link {
+  text-decoration: none;
+}
+
+/* Border style for all nav items */
+/* Remove default underline from links */
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Adjust based on your design */
+}
+
+/* Default state: no border */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* Adjust the thickness of the border */
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover state: show border */
+.nav-link:hover::after {
+  width: 100%;
+  background-color: #db3838; /* Border color on hover */
+}
+
+/* Active state: always show border */
+.nav-item.active .nav-link::after {
+  width: 100%;
+  background-color: red; /* Border color for the active item */
+}
+
+/* Active nav link border style */
+.nav-item.active .nav-link {
+  border-bottom: 2px solid #db3838; /* Change this color as needed */
+}
+
+.py-2 a::before {
+  position: absolute;
+  content: "";
+}
+
+.firstrowimg2 a {
+  background-color: #db3838;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.firstrowimg2 h1 {
+  margin-top: 130px;
+  margin-bottom: 40px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating span {
+  cursor: pointer;
+  font-size: 15px;
+  color: lightgray;
+  margin: 2px;
+}
+
+.rating .filled {
+  color: gold;
+}
+
+.rating .highlight {
+  color: orange;
+}
+
+.fortext::before {
+  content: "";
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  background-color: #ffff;
+  left: 250px;
+  top: 30px;
+  opacity: 0.9;
+}
+
+.fortext::after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  background-color: #ffff;
+  left: 550px;
+  top: 30px;
+  opacity: 0.9;
+}
+
+.carousel-caption h1 {
+  font-size: 85px;
+
+}
+
+.addcartbtn {
+  margin-top: 30px !important;
+
+}
+
+  .rating .highlight {
+    color: orange;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+  
+   button{
+    border: none;
+    background: transparent;
+  }
+  .buttonposition{
+      position: relative;
+  }
+@media (max-width: 520px) {
+
+  .top {
+    padding-top: 110px;
+  }
+
+  .top .col-md-4:hover {
+    background-color: #db3838;
+    color: white;
+  }
+
+  .logoimg {
+    top: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .addcartbtn {
+    margin-top: 0px !important;
+
+  }
+
+  .carousel-caption {
+    top: 30px;
+
+  }
+
+  .carousel-caption h1 {
+    font-size: 30px;
+
+  }
+
+  .maining img {
+    height: 400px;
+  }
+
+  .goquick1 {
+    display: none;
+  }
+
+  boby {
+    overflow-x: hidden;
+  }
+
+  .rowlinein {
+    width: 100%;
+  }
+
+  .fortext::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    background-color: #ffff;
+    left: 50px;
+    top: 25px;
+    opacity: 0.9;
+  }
+
+  .fortext::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    background-color: #ffff;
+    left: 170px;
+    top: 25px;
+    opacity: 0.9;
+  }
+
+  .mensbtns1 {
+    margin-bottom: 60px;
+
+  }
+
+  .firstrowimg2 h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .slides {
+    text-align: start !important;
+  }
+
+  .rating {
+    justify-content: start !important;
+    padding: 0 !important;
+  }
+
+  .wowmebtn {
+    margin-top: 40px !important;
+  }
+
+  .carousel-btns2 {
+    top: 15px !important;
+  }
+}
+
+
+/* ----------------------------------- */
+
+.carousels {
+
+  /* width: 80%; */
+  /* margin: 50px auto; */
+  overflow: hidden;
+}
+
+.carousel-inners {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides {
+  min-width: calc(100% / 2);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.buttonnet {
+  position: relative;
+}
+
+.carousel-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-btns2 {
+  top: 45px;
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wowmebtn {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.carousel-btn--prevs {
+  right: 70px;
+  bottom: 0;
+}
+
+.carousel-btn--nexts {
+  bottom: 0;
+  right: 20px;
+
+}
+
+.carousel-btn--prevs2 {
+  right: 70px;
+  bottom: 0;
+}
+
+.carousel-btn--nexts2 {
+  bottom: 0;
+  right: 20px;
+
+}
+
+/* ---------------------------------------------- */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.buttonposition {
+  position: relative;
+}

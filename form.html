@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dress shop/form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
+  <link rel="stylesheet" href="e-comerce shop dres.css">
+
+</head>
+    <style>
+  .container {
+    margin-top: 80px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-danger {
+    background-color: #e3342f;
+    border-color: #e3342f;
+}
+
+.input-group .btn {
+    background-color: #e3342f;
+    color: white;
+}
+
+
+@media (max-width: 767.98px) {
+    .container {
+        margin-top: 10px;
+    }
+
+    .card-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn-danger {
+        font-size: 0.9rem;
+    }
+    .is-invalid {
+    border-color: red;
+}
+}
+
+</style>
+</head>
+<body>
+    <div class=" top row g-0 ps-3 ps-lg-0">
+        <div class="col-md-4  ms-md-0 col-12 p-2 border-end text-lg-center"><a href=""><i class="fa-solid fa-cart-shopping"></i><span> FREE SHOPPING ON ALL ORDER</span></a></div>
+        <div class="col-md-4  ms-md-0 col-12 p-2 border-end text-lg-center"><a href=""><i class="fa-regular fa-money-bill-1"></i><span> 100% MONEY BACK GURRANTEE</span></a></div>
+        <div class="col-md-4  ms-md-0 col-12 p-2 border-end text-lg-center"><a href=""><i class="fa-regular fa-clock"></i><span> ONLINE SUPPORT 24/7</span></a></div>  
+        </div>
+        
+        <div class="top-2 row mt-md-5 mt-3 mx-md-3  g-0 ">
+        
+          <div class="col-md-2 col-12  ps-5 ps-md-0 ">
+            <div style="background-color: white; position: absolute; z-index: 2; padding: 5px; margin-left: 50px; margin-top: -10px;" class="logoimg">
+              <img src="img/logo.svg" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-12 me-md-5 mt-3 mt-md-0 mt-md-0  ms-md-5 ">
+            <div class="input-group ms-md-5 px-2 px-md-0">
+              <input type="search" class="form-control" placeholder="search" id="search">
+              <select class="form-select" name="" id="">
+                <option value="1" disabled selected>All Catagary</option>
+                <option value="2">mens</option>
+                <option value="3">womens</option>
+                <option value="4">kids</option>
+              </select>
+              <label class="input-group-text p-o p-md-3 text-white" style="background-color:#db3838;" for="search"><i
+                  class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 mt-md-2 mt-3 ps-5 ps-md-0 ms-md-0">
+        
+            <i class="fa-brands fa-facebook p-2 rounded-circle bg-white fs-5 ms-5 me-1"></i>
+            <i class="fa-brands fa-twitter p-2 rounded-circle bg-white fs-5 mx-1"></i>
+            <i class="fa-brands fa-instagram p-2 rounded-circle bg-white fs-5 mx-1"></i>
+            <i class="fa-brands fa-youtube p-2 rounded-circle bg-white fs-5 mx-1"></i>
+        
+          </div>
+          
+        </div>
+        
+      <!-- nav -- -->
+      <nav class="navbar py-0 navbar-expand-sm bg-dark navbar-dark mt-lg-3 mt-0">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-5">
+              <li class="nav-item ms-md-5 ms-3 me-3 active">
+                <a class="nav-link text-white p-4" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4" href="#">Shop</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4" href="#">Features</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4" href="#">Mega Group</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4" href="#">About</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4" href="#">Blog</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4" href="#">Contact</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white p-4 bg-danger" href="addtocard.html">
+                  <i class="fa-solid fa-cart-shopping"></i> Shopping Cart (0)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+<!-------------------------------------------------------------------->
+<div class="container">
+    <div class="row">
+        <!-- Billing Address Form -->
+        <div class="col-lg-8 col-md-12 mb-4">
+            <div class="card border-0">
+                <div class="card-header d-flex  align-items-center py-4" style="background-color: #e6dddd;">
+                    <span><i class="fa-solid fa-house"></i> Returning Custimer?</span>
+                    <a href="" style="text-decoration: none;" class="small text-danger mx-2">Click here to login</a>
+                </div>
+                <h4 class="fs-2 fw-semibold  my-3 ">Billing Address</h4>
+                <div class="card-body border-0">
+                    <form id="billing-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" placeholder="your name" class="form-control py-3 my-2" id="firstName" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" placeholder="your name" class="form-control py-3 my-2" id="lastName" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="Email Here" class="form-control py-3 my-2" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" placeholder="Number" class="form-control py-3 my-2" id="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="companyName">Company (Optional)</label>
+                            <input type="text" class="form-control py-3 my-2" id="companyName" placeholder="Company Name(optional)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" placeholder="Street Address" class="form-control py-3 my-2" id="address" required>
+                            <input type="text" placeholder="Apartment, State,Unit(optional)" class="form-control py-3 my-2" id="address" required>
+                        </div>
+
+                    
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <input type="text" placeholder="England" class="form-control py-3 my-2" id="country" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" placeholder="Londan" class="form-control py-3 my-2" id="state" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" placeholder="Londan" class="form-control py-3 my-2" id="city" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="postcode">Postcode</label>
+                                    <input type="text" class="form-control py-3 my-2" placeholder="39000" id="postcode" required>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="d-flex">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input my-2" id="createAccount">
+                            <label class="form-check-label" for="createAccount">Create An Account?</label>
+                        </div>
+
+                        <div class="form-group form-check mx-3">
+                            <input type="checkbox" class="form-check-input my-2" id="shipToDifferent">
+                            <label class="form-check-label" for="shipToDifferent">Ship To Different Address?</label>
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="orderNotes">Order Notes</label>
+                            <textarea class="form-control my-2" id="orderNotes" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+         <div class="col-lg-4 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Order Summary</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group mb-3 border-0">
+                        <li class="list-group-item d-flex justify-content-between align-items-center fw-semibold">
+                          <img src="img/pant-1.png" alt="" height="75px" width="75px">  Polo shirt sleeveless
+                            <span>$350.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center fw-semibold" >
+                            <img src="img/pant-2.png" alt="" height="75px" width="75px">  Polo shirt sleeveless
+                            <span>$350.00</span>
+                        </li>
+                    </ul>
+
+                    <!-- Discount Code -->
+                    <div class="input-group my-4">
+                        <input type="text" class="form-control py-3" placeholder="Discount code" aria-label="Discount code" style="background-color: #e6dddd;">
+                        <button class="btn btn-outline-secondary" type="button">APPLY CODE</button>
+                    </div>
+
+                    <!-- Pricing Details -->
+                    <ul class="list-group my-4 ">
+                        <li class="list-group-item d-flex justify-content-between align-items-center my-2">
+                            Subtotal
+                            <span>$160.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center my-2">
+                            Shipping
+                            <span>$60.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center my-2">
+                            Incl. Vat
+                            <span>$20.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center my-2">
+                            <strong>Total Value</strong>
+                            <strong class="text-danger">$240.00</strong>
+                        </li>
+                    </ul>
+
+                    <!-- Payment Options -->
+                    <div class="card my-4">
+                        <div class="card-body" style="background-color: #e6dddd;">
+                            <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Direct Bank Transfer</h5><span class="mt-1"><i class="fa-solid fa-circle-minus"></i></span>
+                          </div>
+                            <p class="card-text">Driven saying she abandoned these lights whose cattle made gathering
+                                evening to bless open over grate make greater fruits midst auto book..</p>
+                        </div>
+                    </div>
+
+                    <div class="card my-3" style="background-color: #e6dddd;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Check Payment</h5><span class="mt-1"><i class="fa-solid fa-circle-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card my-3" style="background-color: #e6dddd;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">PayPal</h5><span class="mt-1"><i class="fa-solid fa-circle-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-danger w-100">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!------------------------------------------------------------------------------------->
+<div class="container mt-5" style="color: #444444;">
+  <div class="row g-0">
+    <div class="col-lg-3 col-12">
+      <div class="col-3 col-12  ps-5 ps-md-0 ">
+        <div style="background-color: white; padding: 5px;" class="logoimg">
+        <img src="img/logo.svg" alt=""></div>
+      </div>
+      <p class="m-3">Vestibulum sagittis, nisl nec pellentesque suscipit, arcu nisi maximus neque, vitae finibus erat odio eu lacus. Curabitur malesuada erat eros, quis dignissim dui accumsan id. Cras non imperdiet metus. Sed n nec turpis nec</p>
+    </div>
+    <div class="col-9">
+      <div class="row mt-3">
+        <div class="col-lg-6 col-12 ms-5 ps-lg-0 ps-5 ms-lg-0"><h4 class="text-uppercase fw-semibold mt-3 ">Sign up for our Newsletter !</h4></div>
+        <div class="col-lg-6 col-12 mt-2 mt-lg-0 ps-3 ps-lg-0 ms-5 ms-lg-0">
+          <div class="input-group w-100">
+          <input type="email" class="form-control bg-body-secondary" placeholder="hello@gmail.com" id="email">
+           
+          <label class="input-group-text p-o p-md-3 text-white " style="background-color:#db3838;" for="eamil" >submit</label>
+        </div></div>
+        <p style="height: 1px; width:100%; background-color: #c5b8b8; margin-top: 40px; margin-bottom: 35px;"></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-12 ">
+            <ul style="list-style: none;">
+              <li class="py-2"><h5 class="text-uppercase">information</h5></li>
+              <li class="py-2"><a class="nav-link" href=""><i class="fa-solid fa-caret-right"></i>  Careers</a></li>
+              <li class="py-2"><a class="nav-link" href=""><i class="fa-solid fa-caret-right"></i> Investor Relations</a></li>
+              <li class="py-2"><a class="nav-link" href=""><i class="fa-solid fa-caret-right"></i> Press Releases</a></li>
+              <li class="py-2"><a class="nav-link" href=""> <i class="fa-solid fa-caret-right"></i> Shop with Points</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-12 mx-lg-4">
+            <ul style="list-style: none;">
+              <li class="py-2"><h5 class="text-uppercase">customer care</h5></li>
+              <li class="py-2"><a class="nav-link" href=""><i class="fa-solid fa-caret-right"></i>  Returns</a></li>
+              <li class="py-2"><a class="nav-link" href=""><i class="fa-solid fa-caret-right"></i>  Shipping Info</a></li>
+              <li class="py-2"><a class="nav-link" href=""><i class="fa-solid fa-caret-right"></i>  Gift Cards</a></li>
+              <li class="py-2"><a class="nav-link" href=""> <i class="fa-solid fa-caret-right"></i> Size Guide</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-5 ">
+            <ul style="list-style: none;">
+              <li class="py-2"><h5 class="text-uppercase">  Store Information</h5></li>
+              <li class="py-2"><i class="fa-solid fa-location-dot"></i> address: Lorem ipsum dolor sit amet,
+                Onsectetuer adipiscing elit.</li>
+              <li class="py-2"><i class="fa-solid fa-envelope"></i> email: demo@posthemes.com</li>
+              <li class="py-2"><i class="fa-solid fa-phone"></i> phone: 0987.654.321
+              </li>
+              
+            </ul>
+          </div>>
+        </div>
+        
+    </div>
+  </div>
+  <p style="height: 1px; width:100%; background-color: #c5b8b8; margin-top: 60px; margin-bottom: 50px;"></p>
+  <div class="px-5">
+  <p class="text-center" style="margin-bottom: 50px;"> © 2015 Psdfreebies. All Rights Reserve</p>
+</div>
+</div>
+<div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const form = document.getElementById('billing-form');
+    const submitButton = document.querySelector('.btn-danger');
+
+  
+    function validateForm() {
+      
+        const requiredFields = form.querySelectorAll('[required]');
+        let isValid = true;
+        
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                
+                field.classList.add('is-invalid');
+            } else {
+               
+                field.classList.remove('is-invalid');
+            }
+        });
+
+        return isValid;
+    }
+
+    
+    submitButton.addEventListener('click', function(event) {
+        
+        event.preventDefault();
+
+        
+        if (validateForm()) {
+           
+            form.submit(); 
+        } else {
+            alert('Please fill in all required fields.');
+        }
+    });
+});
+</script>
+
+    
+
+
+
+
+</body>
+</html>
